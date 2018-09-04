@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import List from '../List/List';
 
 class TodoForm extends Component {
   constructor(props) {
@@ -35,6 +36,8 @@ class TodoForm extends Component {
           <input value={this.state.item} onChange={this.handleInput} />
           <button>Create</button>
         </form>
+
+        <List itemList={this.state.itemList} />
       </div>
     )
   }

@@ -25,6 +25,10 @@ class TodoForm extends Component {
     })
   }
 
+  handleDone = (e) => {
+    console.log('delete')
+  }
+
   render () {
     return (
       <div>
@@ -37,7 +41,7 @@ class TodoForm extends Component {
           <button>Create</button>
         </form>
 
-        <List itemList={this.state.itemList} />
+        <List itemList={this.state.itemList} handleDone={this.handleDone}/>
       </div>
     )
   }

@@ -26,7 +26,7 @@ class TodoForm extends Component {
   }
 
   handleDone = (e) => {
-    console.log('delete')
+    const item = this.state.itemList[key]
   }
 
   render () {
